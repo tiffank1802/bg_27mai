@@ -1,0 +1,84 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Register
+{% endblock %}
+
+{% block body %}
+	<div class="w-50 m-auto">
+	<br/>
+		<!-- Jumbotron -->
+		<div class="px-4 py-5 px-md-5 text-center text-lg-start" style="background-color: hsl(0, 0%, 96%)">
+			<div class="container">
+			<div class="row gx-lg-5 align-items-center">
+				<div class="col-lg-6 mb-5 mb-lg-0">
+				<h1 class="my-5 display-5 fw-bold ls-tight">
+					"La lecture nous offre un endroit où aller lorsque nous devons rester où nous sommes." <br />
+					<span class="text-primary">Manson Cooley</span>
+				</h1>
+				<p style="color: hsl(217, 10%, 50.8%)">
+					Inscrivez-vous et profitez d'une collection de livres, de bandes dessinées et de revues qui vous permettra de vous échapper, de rire, de pleurer, de vous enrichir intellectuellement.
+				</p>
+				</div>
+
+				<div class="col-lg-6 mb-5 mb-lg-0">
+					<div class="card">
+						<div class="card-body py-5 px-md-5">
+						<form method="post">
+							{{ form_errors(registrationForm) }}
+
+							{{ form_start(registrationForm) }}
+
+							<!-- 2 column grid layout with text inputs for the first and last names -->
+							<div class="row">
+								<div class="col-md-6 mb-4">
+									<div data-mdb-input-init class="form-outline">
+										{{ form_row(registrationForm.firstname) }}
+									</div>
+								</div>
+								<div class="col-md-6 mb-4">
+									<div data-mdb-input-init class="form-outline">
+										{{ form_row(registrationForm.lastname) }}
+									</div>
+								</div>
+								<div class="col-md-6 mb-4">
+									<div data-mdb-input-init class="form-outline">
+										{{ form_row(registrationForm.username) }}
+									</div>
+								</div>
+							</div>
+							<!-- Email input -->
+							<div data-mdb-input-init class="form-outline mb-4">
+									{{ form_row(registrationForm.email) }}
+							</div>
+							<!-- Password input -->
+							<div data-mdb-input-init class="form-outline mb-4">
+								{{ form_row(registrationForm.plainPassword, {
+										label: 'Mot de passe'}) 
+								}}
+							</div>
+							<!-- Submit button -->
+							<button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block mb-4">
+							S'enregistrer
+							</button>
+							<!-- Register buttons -->
+							<div class="text-center">
+							<p>Ou s'enregistrer avec :</p>
+
+							<button  type="submit"data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
+								<i class="fab fa-google"></i>
+							</button>
+							</div>
+							{{ form_end(registrationForm) }}
+						</form>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+		<!-- Jumbotron -->
+
+	</div>
+	
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Détail du livre{% endblock %}
+
+{% block body %}
+<div class="container mt-4">
+    <div class="card">
+        <img src="{{ livre.cover }}" class="card-img-top" alt="{{ livre.titre }}">
+        <div class="card-body">
+            <h3 class="card-title">{{ livre.titre }}</h3>
+            <p class="card-text">Auteur : {{ livre.auteur.nom }} {{ livre.auteur.prenom }}</p>
+            <p class="card-text">Éditeur : {{ livre.editeur.nom }}</p>
+            <p class="card-text">ISBN : {{ livre.isbn }}</p>
+            <a href="{{ path('liste_livres') }}" class="btn btn-secondary">Retour à la liste</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
