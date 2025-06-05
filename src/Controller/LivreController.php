@@ -26,9 +26,7 @@ final class LivreController extends AbstractController
         return $this->render('livre/index.html.twig', ['livres' => $livres]);
     }
 
-    /**
-     * @Route("/livre/{id}", name="livre_detail")
-     */
+    #[Route('/livre/{id}', name: 'livre_detail')]
     public function detailLivre(int $id, BookRepository $repo): Response {
         $livre = $repo->find($id);
         if (!$livre) {
