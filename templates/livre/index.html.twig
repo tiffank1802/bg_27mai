@@ -3,26 +3,30 @@
 {% block title %}Liste des livres{% endblock %}
 
 {% block body %}
-<div class="row row-cols-1 row-cols-md-3 g-4">
-    {% for livre in livres %}
-        <div class="col">
-            <div class="card h-100">
-                <img src="{{ livre.cover }}" class="card-img-top" alt="{{ livre.title }}">
-                <div class="card-body">
-                    <h5 class="card-title">{{ livre.title }}</h5>
-                    <p class="card-text">
-                        Auteur(s):
-                        {% for author in livre.authors %}
-                            {{ author.name }}{% if not loop.last %}, {% endif %}
-                        {% else %}
-                            <em>Non renseigné</em>
-                        {% endfor %}
-                    </p>
-                    <p class="card-text">Éditeur: {{ livre.editor ? livre.editor.name : 'Non renseigné' }}</p>
-                    <a href="{{ path('livre_detail', {'id': livre.id}) }}" class="btn btn-primary">Détails</a>
+<div class="container mt-5">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        {% for livre in livres %}
+            <div class="col">
+                <div class="card h-100 shadow-sm" style="background: url('/images/paix-et-guerre.png') center/cover no-repeat; position: relative;">
+                    <div style="background: rgba(0,0,0,0.6); position: absolute; top:0; left:0; width:100%; height:100%; border-radius: .5rem;"></div>
+                    <div class="card-body position-relative" style="z-index:2; color: #fff;">
+                        <h5 class="card-title">{{ livre.title }}</h5>
+                        <hr style="border-color: #fff;">
+                        <p class="card-text">
+                            <strong>Auteur(s):</strong>
+                            {% for author in livre.authors %}
+                                {{ author.name }}{% if not loop.last %}, {% endif %}
+                            {% else %}
+                                <em>Non renseigné</em>
+                            {% endfor %}
+                        </p>
+                        <p class="card-text"><strong>Éditeur:</strong> {{ livre.editor ? livre.editor.name : 'Non renseigné' }}</p>
+                        <p class="card-text"><strong>ISBN:</strong> {{ livre.isbn }}</p>
+                        <a href="{{ path('app_livre') }}" class="btn btn-primary mt-2">Détails</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    {% endfor %}
+        {% endfor %}
+    </div>
 </div>
 {% endblock %}

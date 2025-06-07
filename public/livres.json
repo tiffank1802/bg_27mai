@@ -1,0 +1,941 @@
+[
+  {
+    "titre": "1984",
+    "isbn": "9780451524935",
+    "edited_at": "1949-06-08",
+    "plot": "Dans une société dystopique sous surveillance constante, Winston Smith tente de résister à un régime totalitaire.",
+    "page_number": 328
+  },
+  {
+    "titre": "Le Petit Prince",
+    "isbn": "9782070612758",
+    "edited_at": "1943-04-06",
+    "plot": "Un aviateur échoué dans le désert rencontre un petit prince venu d’une autre planète, abordant des thèmes philosophiques et poétiques.",
+    "page_number": 96
+  },
+  {
+    "titre": "Harry Potter à l'école des sorciers",
+    "isbn": "9780747532699",
+    "edited_at": "1997-06-26",
+    "plot": "Harry découvre qu'il est un sorcier et commence sa première année à Poudlard, où de nombreuses aventures l’attendent.",
+    "page_number": 223
+  },
+  {
+    "titre": "L'Étranger",
+    "isbn": "9782070360024",
+    "edited_at": "1942-05-19",
+    "plot": "Meursault, un homme détaché, commet un meurtre en Algérie et fait face à l’absurdité de la vie.",
+    "page_number": 123
+  },
+  {
+    "titre": "Le Seigneur des Anneaux : La Communauté de l'Anneau",
+    "isbn": "9780261102354",
+    "edited_at": "1954-07-29",
+    "plot": "Frodon Sacquet entame un périlleux voyage pour détruire l’Anneau Unique et sauver la Terre du Milieu.",
+    "page_number": 480
+  },
+  {
+    "titre": "Orgueil et Préjugés",
+    "isbn": "9780141439518",
+    "edited_at": "1813-01-28",
+    "plot": "Elizabeth Bennet navigue entre amour, orgueil et préjugés dans l’Angleterre du XIXe siècle.",
+    "page_number": 279
+  },
+  {
+    "titre": "Le Comte de Monte-Cristo",
+    "isbn": "9782253004226",
+    "edited_at": "1844-08-28",
+    "plot": "Edmond Dantès, trahi et emprisonné, s’évade et prépare une vengeance magistrale.",
+    "page_number": 1312
+  },
+  {
+    "titre": "Le Hobbit",
+    "isbn": "9780261102217",
+    "edited_at": "1937-09-21",
+    "plot": "Bilbo Baggins part à l’aventure avec des nains pour récupérer un trésor gardé par un dragon.",
+    "page_number": 310
+  },
+  {
+    "titre": "Da Vinci Code",
+    "isbn": "9780307474278",
+    "edited_at": "2003-03-18",
+    "plot": "Robert Langdon enquête sur un meurtre au Louvre, révélant des secrets cachés dans l’art et la religion.",
+    "page_number": 489
+  },
+  {
+    "titre": "Les Misérables",
+    "isbn": "9782070409181",
+    "edited_at": "1862-04-03",
+    "plot": "L’histoire de Jean Valjean, ancien forçat, cherchant la rédemption dans la France du XIXe siècle.",
+    "page_number": 1488
+  },
+  {
+    "titre": "Moby Dick",
+    "isbn": "9780142437247",
+    "edited_at": "1851-10-18",
+    "plot": "Le capitaine Achab poursuit obsessionnellement une baleine blanche légendaire.",
+    "page_number": 635
+  },
+  {
+    "titre": "Crime et Châtiment",
+    "isbn": "9782070360536",
+    "edited_at": "1866-01-01",
+    "plot": "Raskolnikov, étudiant pauvre, commet un meurtre et lutte avec sa conscience.",
+    "page_number": 671
+  },
+  {
+    "titre": "Don Quichotte",
+    "isbn": "9782070108763",
+    "edited_at": "1605-01-16",
+    "plot": "Un noble espagnol devient chevalier errant et vit des aventures absurdes.",
+    "page_number": 1072
+  },
+  {
+    "titre": "La Peste",
+    "isbn": "9782070360420",
+    "edited_at": "1947-06-10",
+    "plot": "Une épidémie de peste frappe la ville d'Oran, bouleversant la vie de ses habitants.",
+    "page_number": 320
+  },
+  {
+    "titre": "Madame Bovary",
+    "isbn": "9782070360024",
+    "edited_at": "1857-04-01",
+    "plot": "Emma Bovary cherche l’évasion dans l’amour et le luxe, insatisfaite de sa vie provinciale.",
+    "page_number": 384
+  },
+  {
+    "titre": "Gatsby le Magnifique",
+    "isbn": "9782070360536",
+    "edited_at": "1925-04-10",
+    "plot": "Jay Gatsby organise de somptueuses fêtes pour reconquérir son amour perdu, Daisy.",
+    "page_number": 180
+  },
+  {
+    "titre": "Les Fleurs du mal",
+    "isbn": "9782070413119",
+    "edited_at": "1857-06-25",
+    "plot": "Recueil de poèmes explorant la beauté, le spleen et la décadence.",
+    "page_number": 208
+  },
+  {
+    "titre": "Le Rouge et le Noir",
+    "isbn": "9782070360024",
+    "edited_at": "1830-11-01",
+    "plot": "Julien Sorel, ambitieux fils de charpentier, tente de s’élever dans la société française.",
+    "page_number": 576
+  },
+  {
+    "titre": "Jane Eyre",
+    "isbn": "9780141441146",
+    "edited_at": "1847-10-16",
+    "plot": "Orpheline, Jane Eyre devient gouvernante et tombe amoureuse de son employeur mystérieux.",
+    "page_number": 532
+  },
+  {
+    "titre": "Le Vieil Homme et la Mer",
+    "isbn": "9782070360536",
+    "edited_at": "1952-09-01",
+    "plot": "Un vieux pêcheur lutte pour capturer un énorme marlin au large de Cuba.",
+    "page_number": 127
+  },
+  {
+    "titre": "Anna Karénine",
+    "isbn": "9782070409150",
+    "edited_at": "1877-01-01",
+    "plot": "Anna, mariée à un haut fonctionnaire, tombe amoureuse d’un officier et défie les conventions sociales.",
+    "page_number": 864
+  }
+,
+    {
+        "titre": "To Kill a Mockingbird",
+        "isbn": "9780061120084",
+        "edited_at": "1960-07-11",
+        "plot": "Scout Finch grandit dans le sud ségrégationniste des États-Unis, où son père défend un homme noir accusé à tort.",
+        "page_number": 281
+    },
+    {
+        "titre": "La Métamorphose",
+        "isbn": "9782070368228",
+        "edited_at": "1915-10-01",
+        "plot": "Gregor Samsa se réveille transformé en insecte géant, bouleversant sa famille.",
+        "page_number": 124
+    },
+    {
+        "titre": "Le Parfum",
+        "isbn": "9782070409303",
+        "edited_at": "1985-10-01",
+        "plot": "Jean-Baptiste Grenouille, doté d’un odorat exceptionnel, cherche à créer le parfum parfait.",
+        "page_number": 384
+    },
+    {
+        "titre": "Bel-Ami",
+        "isbn": "9782070360024",
+        "edited_at": "1885-04-01",
+        "plot": "Georges Duroy gravit les échelons de la société parisienne grâce à son charme.",
+        "page_number": 384
+    },
+    {
+        "titre": "Le Nom de la rose",
+        "isbn": "9782070409327",
+        "edited_at": "1980-10-01",
+        "plot": "Guillaume de Baskerville enquête sur des meurtres mystérieux dans une abbaye médiévale.",
+        "page_number": 552
+    },
+    {
+        "titre": "Le Meilleur des mondes",
+        "isbn": "9782070368228",
+        "edited_at": "1932-01-01",
+        "plot": "Dans une société futuriste, le bonheur est imposé au détriment de la liberté individuelle.",
+        "page_number": 311
+    },
+    {
+        "titre": "Les Trois Mousquetaires",
+        "isbn": "9782070409181",
+        "edited_at": "1844-03-01",
+        "plot": "D’Artagnan rejoint trois mousquetaires pour défendre l’honneur du roi.",
+        "page_number": 832
+    },
+    {
+        "titre": "Voyage au centre de la Terre",
+        "isbn": "9782070360024",
+        "edited_at": "1864-11-25",
+        "plot": "Le professeur Lidenbrock et son neveu entreprennent une expédition extraordinaire sous la Terre.",
+        "page_number": 304
+    },
+    {
+        "titre": "Les Hauts de Hurlevent",
+        "isbn": "9782070360024",
+        "edited_at": "1847-12-01",
+        "plot": "L’histoire d’amour tourmentée entre Heathcliff et Catherine sur les landes anglaises.",
+        "page_number": 416
+    },
+    {
+        "titre": "Dracula",
+        "isbn": "9782070360536",
+        "edited_at": "1897-05-26",
+        "plot": "Le comte Dracula sème la terreur en Angleterre.",
+        "page_number": 488
+    },
+    {
+        "titre": "Les Raisins de la colère",
+        "isbn": "9782070360536",
+        "edited_at": "1939-04-14",
+        "plot": "La famille Joad fuit la misère de l’Oklahoma pour la Californie pendant la Grande Dépression.",
+        "page_number": 640
+    },
+    {
+        "titre": "Le Livre de la jungle",
+        "isbn": "9782070360024",
+        "edited_at": "1894-05-01",
+        "plot": "Mowgli, élevé par des loups, apprend à survivre dans la jungle indienne.",
+        "page_number": 256
+    },
+    {
+        "titre": "Les Aventures de Tom Sawyer",
+        "isbn": "9782070360024",
+        "edited_at": "1876-06-01",
+        "plot": "Tom Sawyer vit de nombreuses aventures au bord du Mississippi.",
+        "page_number": 288
+    },
+    {
+        "titre": "Le Portrait de Dorian Gray",
+        "isbn": "9782070360536",
+        "edited_at": "1890-06-20",
+        "plot": "Dorian Gray reste éternellement jeune tandis que son portrait vieillit à sa place.",
+        "page_number": 320
+    },
+    {
+        "titre": "L’Attrape-cœurs",
+        "isbn": "9782070360024",
+        "edited_at": "1951-07-16",
+        "plot": "Holden Caulfield erre dans New York après avoir été renvoyé de son école.",
+        "page_number": 277
+    },
+    {
+        "titre": "Le Vieil Homme qui lisait des romans d’amour",
+        "isbn": "9782070409327",
+        "edited_at": "1989-01-01",
+        "plot": "Un vieil homme vit en harmonie avec la forêt amazonienne et ses habitants.",
+        "page_number": 160
+    },
+    {
+        "titre": "L’Odyssée",
+        "isbn": "9782070360024",
+        "edited_at": "-800-01-01",
+        "plot": "Ulysse tente de rentrer chez lui après la guerre de Troie.",
+        "page_number": 416
+    },
+    {
+        "titre": "Le Procès",
+        "isbn": "9782070368228",
+        "edited_at": "1925-04-26",
+        "plot": "Josef K. est arrêté sans raison et plongé dans un cauchemar judiciaire.",
+        "page_number": 320
+    },
+    {
+        "titre": "Les Liaisons dangereuses",
+        "isbn": "9782070360024",
+        "edited_at": "1782-03-23",
+        "plot": "Deux aristocrates manipulent leur entourage par jeu de séduction et de pouvoir.",
+        "page_number": 448
+    },
+    {
+        "titre": "Candide",
+        "isbn": "9782070360024",
+        "edited_at": "1759-01-01",
+        "plot": "Candide parcourt le monde à la recherche du bonheur.",
+        "page_number": 192
+    },
+    {
+        "titre": "Les Fourmis",
+        "isbn": "9782253147756",
+        "edited_at": "1991-01-01",
+        "plot": "Une plongée dans l’univers fascinant des fourmis.",
+        "page_number": 320
+    },
+    {
+        "titre": "Le Silence de la mer",
+        "isbn": "9782070360024",
+        "edited_at": "1942-01-01",
+        "plot": "Un officier allemand est logé chez des Français silencieux pendant l’Occupation.",
+        "page_number": 96
+    },
+    {
+        "titre": "L’Alchimiste",
+        "isbn": "9782070409327",
+        "edited_at": "1988-01-01",
+        "plot": "Santiago part à la recherche d’un trésor caché en Égypte.",
+        "page_number": 190
+    },
+    {
+        "titre": "Le Joueur d’échecs",
+        "isbn": "9782070368228",
+        "edited_at": "1943-01-01",
+        "plot": "Un homme découvre les échecs en captivité et sombre dans l’obsession.",
+        "page_number": 128
+    },
+    {
+        "titre": "Le Petit Nicolas",
+        "isbn": "9782070360024",
+        "edited_at": "1959-03-29",
+        "plot": "Les aventures drôles et tendres d’un petit garçon et de ses camarades.",
+        "page_number": 160
+    },
+    {
+        "titre": "Le Père Goriot",
+        "isbn": "9782070360024",
+        "edited_at": "1835-03-01",
+        "plot": "Dans une pension parisienne, le destin tragique d’un père dévoué.",
+        "page_number": 416
+    },
+    {
+        "titre": "Le Tour du monde en quatre-vingts jours",
+        "isbn": "9782070360024",
+        "edited_at": "1873-01-30",
+        "plot": "Phileas Fogg tente de faire le tour du monde en 80 jours.",
+        "page_number": 312
+    },
+    {
+        "titre": "Le Dernier Jour d’un condamné",
+        "isbn": "9782070360024",
+        "edited_at": "1829-02-15",
+        "plot": "Les pensées d’un homme condamné à mort.",
+        "page_number": 192
+    },
+    {
+        "titre": "Les Contes de la Bécasse",
+        "isbn": "9782070360024",
+        "edited_at": "1883-01-01",
+        "plot": "Recueil de nouvelles sur la vie rurale et la chasse.",
+        "page_number": 192
+    },
+    {
+        "titre": "L’Île mystérieuse",
+        "isbn": "9782070360024",
+        "edited_at": "1874-01-01",
+        "plot": "Des naufragés tentent de survivre sur une île inconnue.",
+        "page_number": 672
+    },
+    {
+        "titre": "Les Malheurs de Sophie",
+        "isbn": "9782070360024",
+        "edited_at": "1858-01-01",
+        "plot": "Les bêtises et aventures de la petite Sophie.",
+        "page_number": 192
+    },
+    {
+        "titre": "Le Capitaine Fracasse",
+        "isbn": "9782070360024",
+        "edited_at": "1863-01-01",
+        "plot": "Un baron ruiné devient comédien ambulant.",
+        "page_number": 416
+    },
+    {
+        "titre": "Les Chants de Maldoror",
+        "isbn": "9782070360024",
+        "edited_at": "1869-01-01",
+        "plot": "Un poème en prose sombre et provocateur.",
+        "page_number": 320
+    },
+    {
+        "titre": "Le Livre de ma mère",
+        "isbn": "9782070360024",
+        "edited_at": "1954-01-01",
+        "plot": "Hommage d’un fils à sa mère disparue.",
+        "page_number": 192
+    },
+    {
+        "titre": "La Condition humaine",
+        "isbn": "9782070360024",
+        "edited_at": "1933-01-01",
+        "plot": "Des révolutionnaires chinois face à leur destin.",
+        "page_number": 384
+    },
+    {
+        "titre": "Le Grand Meaulnes",
+        "isbn": "9782070360024",
+        "edited_at": "1913-11-01",
+        "plot": "L’histoire d’un amour idéalisé et d’une quête d’absolu.",
+        "page_number": 320
+    },
+    {
+        "titre": "La Promesse de l’aube",
+        "isbn": "9782070360024",
+        "edited_at": "1960-01-01",
+        "plot": "Romain Gary raconte son enfance et l’amour inconditionnel de sa mère.",
+        "page_number": 448
+    },
+    {
+        "titre": "La Chartreuse de Parme",
+        "isbn": "9782070360024",
+        "edited_at": "1839-01-01",
+        "plot": "Les aventures de Fabrice del Dongo dans l’Italie napoléonienne.",
+        "page_number": 704
+    },
+    {
+        "titre": "La Mare au diable",
+        "isbn": "9782070360024",
+        "edited_at": "1846-01-01",
+        "plot": "Un paysan veuf trouve l’amour auprès d’une jeune servante.",
+        "page_number": 192
+    },
+    {
+        "titre": "La Princesse de Clèves",
+        "isbn": "9782070360024",
+        "edited_at": "1678-03-01",
+        "plot": "Une femme lutte entre passion et devoir à la cour du roi Henri II.",
+        "page_number": 320
+    },
+    {
+        "titre": "La Symphonie pastorale",
+        "isbn": "9782070360024",
+        "edited_at": "1919-01-01",
+        "plot": "Un pasteur recueille une jeune aveugle et s’attache à elle.",
+        "page_number": 160
+    },
+    {
+        "titre": "La Vie devant soi",
+        "isbn": "9782070360024",
+        "edited_at": "1975-01-01",
+        "plot": "Momo, enfant arabe, est élevé par Madame Rosa, ancienne prostituée.",
+        "page_number": 288
+    },
+    {
+        "titre": "Le Bal",
+        "isbn": "9782070360024",
+        "edited_at": "1930-01-01",
+        "plot": "Une adolescente se venge de sa mère lors d’un bal.",
+        "page_number": 96
+    },
+    {
+        "titre": "Le Blé en herbe",
+        "isbn": "9782070360024",
+        "edited_at": "1923-01-01",
+        "plot": "Deux adolescents découvrent l’amour et la jalousie.",
+        "page_number": 192
+    },
+    {
+        "titre": "Le Château de ma mère",
+        "isbn": "9782070360024",
+        "edited_at": "1929-01-01",
+        "plot": "Souvenirs d’enfance de Marcel Pagnol en Provence.",
+        "page_number": 256
+    },
+    {
+        "titre": "Le Colonel Chabert",
+        "isbn": "9782070360024",
+        "edited_at": "1832-01-01",
+        "plot": "Un officier napoléonien revient d’entre les morts pour récupérer sa vie.",
+        "page_number": 192
+    },
+    {
+        "titre": "Le Dernier des Mohicans",
+        "isbn": "9782070360024",
+        "edited_at": "1826-01-01",
+        "plot": "Aventures pendant la guerre de la Conquête en Amérique du Nord.",
+        "page_number": 512
+    },
+    {
+        "titre": "Le Diable au corps",
+        "isbn": "9782070360024",
+        "edited_at": "1923-01-01",
+        "plot": "Un adolescent tombe amoureux d’une femme mariée pendant la guerre.",
+        "page_number": 192
+    },
+    {
+        "titre": "Le Horla",
+        "isbn": "9782070360024",
+        "edited_at": "1887-01-01",
+        "plot": "Un homme est hanté par une présence invisible.",
+        "page_number": 128
+    },
+    {
+        "titre": "Le Lys dans la vallée",
+        "isbn": "9782070360024",
+        "edited_at": "1836-01-01",
+        "plot": "Un amour impossible dans la campagne tourangelle.",
+        "page_number": 416
+    },
+    {
+        "titre": "Le Père Noël supplicié",
+        "isbn": "9782070360024",
+        "edited_at": "1956-01-01",
+        "plot": "Un recueil de nouvelles satiriques sur Noël.",
+        "page_number": 128
+    },
+    {
+        "titre": "Le Petit Chose",
+        "isbn": "9782070360024",
+        "edited_at": "1868-01-01",
+        "plot": "Les souvenirs d’enfance d’un jeune garçon pauvre.",
+        "page_number": 320
+    },
+    {
+        "titre": "Le Roman de Renart",
+        "isbn": "9782070360024",
+        "edited_at": "1171-01-01",
+        "plot": "Les ruses du goupil Renart dans la société médiévale.",
+        "page_number": 256
+    },
+    {
+        "titre": "Le Rouge et le Noir",
+        "isbn": "9782070360024",
+        "edited_at": "1830-11-01",
+        "plot": "Julien Sorel, ambitieux fils de charpentier, tente de s’élever dans la société française.",
+        "page_number": 576
+    },
+    {
+        "titre": "Le Tour du monde en quatre-vingts jours",
+        "isbn": "9782070360024",
+        "edited_at": "1873-01-30",
+        "plot": "Phileas Fogg tente de faire le tour du monde en 80 jours.",
+        "page_number": 312
+    },
+    {
+        "titre": "Le Vicomte de Bragelonne",
+        "isbn": "9782070360024",
+        "edited_at": "1847-01-01",
+        "plot": "Suite des Trois Mousquetaires, avec Raoul de Bragelonne.",
+        "page_number": 1600
+    },
+    {
+        "titre": "Les Confessions",
+        "isbn": "9782070360024",
+        "edited_at": "1782-01-01",
+        "plot": "Autobiographie de Jean-Jacques Rousseau.",
+        "page_number": 672
+    },
+    {
+        "titre": "Les Fables",
+        "isbn": "9782070360024",
+        "edited_at": "1668-01-01",
+        "plot": "Recueil de fables morales et animalières.",
+        "page_number": 416
+    },
+    {
+        "titre": "Les Faux-monnayeurs",
+        "isbn": "9782070360024",
+        "edited_at": "1925-01-01",
+        "plot": "Roman sur la duplicité et la création littéraire.",
+        "page_number": 480
+    },
+    {
+        "titre": "Les Illusions perdues",
+        "isbn": "9782070360024",
+        "edited_at": "1837-01-01",
+        "plot": "Lucien de Rubempré tente de réussir à Paris.",
+        "page_number": 704
+    },
+    {
+        "titre": "Les Justes",
+        "isbn": "9782070360024",
+        "edited_at": "1950-01-01",
+        "plot": "Des révolutionnaires russes face à la violence politique.",
+        "page_number": 160
+    },
+    {
+        "titre": "Les Lettres persanes",
+        "isbn": "9782070360024",
+        "edited_at": "1721-01-01",
+        "plot": "Deux Persans découvrent la société française.",
+        "page_number": 320
+    },
+    {
+        "titre": "Les Mandarins",
+        "isbn": "9782070360024",
+        "edited_at": "1954-01-01",
+        "plot": "Des intellectuels parisiens après la Seconde Guerre mondiale.",
+        "page_number": 704
+    },
+    {
+        "titre": "Les Mains sales",
+        "isbn": "9782070360024",
+        "edited_at": "1948-01-01",
+        "plot": "Un jeune homme s’engage dans un parti révolutionnaire.",
+        "page_number": 288
+    },
+    {
+        "titre": "Les Misérables",
+        "isbn": "9782070409181",
+        "edited_at": "1862-04-03",
+        "plot": "L’histoire de Jean Valjean, ancien forçat, cherchant la rédemption dans la France du XIXe siècle.",
+        "page_number": 1488
+    },
+    {
+        "titre": "Les Poèmes saturniens",
+        "isbn": "9782070360024",
+        "edited_at": "1866-01-01",
+        "plot": "Recueil de poèmes de Verlaine.",
+        "page_number": 128
+    },
+    {
+        "titre": "Les Rougon-Macquart",
+        "isbn": "9782070360024",
+        "edited_at": "1871-01-01",
+        "plot": "Saga familiale sous le Second Empire.",
+        "page_number": 800
+    },
+    {
+        "titre": "Les Travailleurs de la mer",
+        "isbn": "9782070360024",
+        "edited_at": "1866-01-01",
+        "plot": "Un homme lutte contre la mer pour sauver un navire.",
+        "page_number": 512
+    },
+    {
+        "titre": "Lettres de mon moulin",
+        "isbn": "9782070360024",
+        "edited_at": "1869-01-01",
+        "plot": "Nouvelles provençales pleines de charme.",
+        "page_number": 256
+    },
+    {
+        "titre": "L’Éducation sentimentale",
+        "isbn": "9782070360024",
+        "edited_at": "1869-01-01",
+        "plot": "Frédéric Moreau poursuit un amour impossible.",
+        "page_number": 512
+    },
+    {
+        "titre": "L’Écume des jours",
+        "isbn": "9782070360024",
+        "edited_at": "1947-01-01",
+        "plot": "Colin et Chloé vivent un amour tragique dans un univers poétique.",
+        "page_number": 320
+    },
+    {
+        "titre": "L’Enfant",
+        "isbn": "9782070360024",
+        "edited_at": "1879-01-01",
+        "plot": "Souvenirs d’enfance de Jules Vallès.",
+        "page_number": 320
+    },
+    {
+        "titre": "L’Ingénu",
+        "isbn": "9782070360024",
+        "edited_at": "1767-01-01",
+        "plot": "Un Huron découvre la société française.",
+        "page_number": 192
+    },
+    {
+        "titre": "L’Œuvre",
+        "isbn": "9782070360024",
+        "edited_at": "1886-01-01",
+        "plot": "Un peintre lutte pour la reconnaissance.",
+        "page_number": 480
+    },
+    {
+        "titre": "L’Œuvre au noir",
+        "isbn": "9782070360024",
+        "edited_at": "1968-01-01",
+        "plot": "La vie d’un alchimiste à la Renaissance.",
+        "page_number": 512
+    },
+    {
+        "titre": "L’Assommoir",
+        "isbn": "9782070360024",
+        "edited_at": "1877-01-01",
+        "plot": "La descente aux enfers d’une blanchisseuse parisienne.",
+        "page_number": 544
+    },
+    {
+        "titre": "L’Avare",
+        "isbn": "9782070360024",
+        "edited_at": "1668-01-01",
+        "plot": "Harpagon est obsédé par l’argent.",
+        "page_number": 160
+    },
+    {
+        "titre": "L’Étranger",
+        "isbn": "9782070360024",
+        "edited_at": "1942-05-19",
+        "plot": "Meursault, un homme détaché, commet un meurtre en Algérie et fait face à l’absurdité de la vie.",
+        "page_number": 123
+    },
+    {
+        "titre": "L’Immoraliste",
+        "isbn": "9782070360024",
+        "edited_at": "1902-01-01",
+        "plot": "Un homme remet en question sa morale après une maladie.",
+        "page_number": 192
+    },
+    {
+        "titre": "L’Île au trésor",
+        "isbn": "9782070360024",
+        "edited_at": "1883-01-01",
+        "plot": "Jim Hawkins part à la recherche d’un trésor de pirates.",
+        "page_number": 320
+    },
+    {
+        "titre": "L’Insoutenable légèreté de l’être",
+        "isbn": "9782070360024",
+        "edited_at": "1984-01-01",
+        "plot": "Des destins croisés dans la Tchécoslovaquie communiste.",
+        "page_number": 448
+    },
+    {
+        "titre": "L’Invitation au voyage",
+        "isbn": "9782070360024",
+        "edited_at": "1857-01-01",
+        "plot": "Poème sur le rêve d’un ailleurs idéal.",
+        "page_number": 64
+    },
+    {
+        "titre": "L’Oeuvre",
+        "isbn": "9782070360024",
+        "edited_at": "1886-01-01",
+        "plot": "Un peintre lutte pour la reconnaissance.",
+        "page_number": 480
+    },
+    {
+        "titre": "L’Ombre du vent",
+        "isbn": "9782070360024",
+        "edited_at": "2001-01-01",
+        "plot": "Un jeune garçon découvre un livre mystérieux dans la Barcelone d’après-guerre.",
+        "page_number": 637
+    },
+    {
+        "titre": "L’Origine du monde",
+        "isbn": "9782070360024",
+        "edited_at": "1996-01-01",
+        "plot": "Réflexion sur la peinture et le désir.",
+        "page_number": 192
+    },
+    {
+        "titre": "L’Œil du loup",
+        "isbn": "9782070360024",
+        "edited_at": "1984-01-01",
+        "plot": "Un enfant africain et un loup se racontent leur vie.",
+        "page_number": 96
+    },
+    {
+        "titre": "L’Œuvre de Dieu, la part du Diable",
+        "isbn": "9782070360024",
+        "edited_at": "1985-01-01",
+        "plot": "Un orphelin grandit dans un hôpital du Maine.",
+        "page_number": 736
+    },
+    {
+        "titre": "L’Œuvre du temps",
+        "isbn": "9782070360024",
+        "edited_at": "1999-01-01",
+        "plot": "Réflexion sur la mémoire et l’histoire.",
+        "page_number": 320
+    },
+    {
+        "titre": "L’Œuvre noire",
+        "isbn": "9782070360024",
+        "edited_at": "1993-01-01",
+        "plot": "Roman policier dans le milieu de l’art.",
+        "page_number": 384
+    },
+    {
+        "titre": "L’Œuvre vive",
+        "isbn": "9782070360024",
+        "edited_at": "1996-01-01",
+        "plot": "Un écrivain en quête d’inspiration.",
+        "page_number": 256
+    },
+    {
+        "titre": "L’Œuvre blanche",
+        "isbn": "9782070360024",
+        "edited_at": "2000-01-01",
+        "plot": "Roman sur la pureté et la création.",
+        "page_number": 288
+    },
+    {
+        "titre": "L’Œuvre rouge",
+        "isbn": "9782070360024",
+        "edited_at": "2002-01-01",
+        "plot": "Un thriller autour d’un tableau mystérieux.",
+        "page_number": 320
+    },
+    {
+        "titre": "L’Œuvre bleue",
+        "isbn": "9782070360024",
+        "edited_at": "2004-01-01",
+        "plot": "Un roman sur l’art et la folie.",
+        "page_number": 352
+    },
+    {
+        "titre": "L’Œuvre verte",
+        "isbn": "9782070360024",
+        "edited_at": "2006-01-01",
+        "plot": "Un botaniste découvre une plante extraordinaire.",
+        "page_number": 288
+    },
+    {
+        "titre": "L’Œuvre jaune",
+        "isbn": "9782070360024",
+        "edited_at": "2008-01-01",
+        "plot": "Un peintre cherche la couleur parfaite.",
+        "page_number": 256
+    },
+    {
+        "titre": "L’Œuvre orange",
+        "isbn": "9782070360024",
+        "edited_at": "2010-01-01",
+        "plot": "Un roman sur la lumière et la couleur.",
+        "page_number": 224
+    },
+    {
+        "titre": "L’Œuvre violette",
+        "isbn": "9782070360024",
+        "edited_at": "2012-01-01",
+        "plot": "Une histoire d’amour et de peinture.",
+        "page_number": 192
+    },
+    {
+        "titre": "L’Œuvre grise",
+        "isbn": "9782070360024",
+        "edited_at": "2014-01-01",
+        "plot": "Un roman sur la vieillesse et la mémoire.",
+        "page_number": 208
+    },
+    {
+        "titre": "L’Œuvre dorée",
+        "isbn": "9782070360024",
+        "edited_at": "2016-01-01",
+        "plot": "Un roman sur la richesse et la perte.",
+        "page_number": 240
+    },
+    {
+        "titre": "L’Œuvre argentée",
+        "isbn": "9782070360024",
+        "edited_at": "2018-01-01",
+        "plot": "Un roman sur le temps et la nostalgie.",
+        "page_number": 224
+    },
+    {
+        "titre": "L’Œuvre brune",
+        "isbn": "9782070360024",
+        "edited_at": "2020-01-01",
+        "plot": "Un roman sur la terre et les racines.",
+        "page_number": 208
+    },
+    {
+        "titre": "L’Œuvre turquoise",
+        "isbn": "9782070360024",
+        "edited_at": "2022-01-01",
+        "plot": "Un roman sur la mer et l’aventure.",
+        "page_number": 192
+    },
+    {
+        "titre": "L’Œuvre indigo",
+        "isbn": "9782070360024",
+        "edited_at": "2023-01-01",
+        "plot": "Un roman sur la nuit et les rêves.",
+        "page_number": 176
+    },
+    {
+        "titre": "L’Œuvre rose",
+        "isbn": "9782070360024",
+        "edited_at": "2024-01-01",
+        "plot": "Un roman sur l’enfance et l’innocence.",
+        "page_number": 160
+    },
+    {
+        "titre": "L’Œuvre multicolore",
+        "isbn": "9782070360024",
+        "edited_at": "2025-01-01",
+        "plot": "Un roman sur la diversité et la vie.",
+        "page_number": 144
+    },
+    {
+        "titre": "L’Œuvre arc-en-ciel",
+        "isbn": "9782070360024",
+        "edited_at": "2026-01-01",
+        "plot": "Un roman sur l’espoir et la paix.",
+        "page_number": 128
+    },
+    {
+        "titre": "L’Œuvre noire et blanche",
+        "isbn": "9782070360024",
+        "edited_at": "2027-01-01",
+        "plot": "Un roman sur les contrastes et les oppositions.",
+        "page_number": 112
+    },
+    {
+        "titre": "L’Œuvre transparente",
+        "isbn": "9782070360024",
+        "edited_at": "2028-01-01",
+        "plot": "Un roman sur la vérité et la révélation.",
+        "page_number": 96
+    },
+    {
+        "titre": "L’Œuvre invisible",
+        "isbn": "9782070360024",
+        "edited_at": "2029-01-01",
+        "plot": "Un roman sur l’absence et le manque.",
+        "page_number": 80
+    },
+    {
+        "titre": "L’Œuvre silencieuse",
+        "isbn": "9782070360024",
+        "edited_at": "2030-01-01",
+        "plot": "Un roman sur le silence et l’écoute.",
+        "page_number": 64
+    },
+    {
+        "titre": "L’Œuvre bruyante",
+        "isbn": "9782070360024",
+        "edited_at": "2031-01-01",
+        "plot": "Un roman sur le bruit et la cacophonie.",
+        "page_number": 48
+    },
+    {
+        "titre": "L’Œuvre éclatante",
+        "isbn": "9782070360024",
+        "edited_at": "2032-01-01",
+        "plot": "Un roman sur la lumière et la révélation.",
+        "page_number": 32
+    },
+    {
+        "titre": "L’Œuvre obscure",
+        "isbn": "9782070360024",
+        "edited_at": "2033-01-01",
+        "plot": "Un roman sur l’ombre et le secret.",
+        "page_number": 16
+    }
+]

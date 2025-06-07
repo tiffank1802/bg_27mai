@@ -6,6 +6,10 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
 use App\Repository\BookRepository;
+use App\Form\CommentType;
+use App\Entity\Comment;
+use Symfony\Component\HttpFoundation\Request;
+use Doctrine\ORM\EntityManagerInterface;
 
 final class LivreController extends AbstractController
 {
@@ -26,12 +30,26 @@ final class LivreController extends AbstractController
         return $this->render('livre/index.html.twig', ['livres' => $livres]);
     }
 
-    #[Route('/livre/{id}', name: 'livre_detail')]
-    public function detailLivre(int $id, BookRepository $repo): Response {
+    /**
+     * @Route("/livre/{id}", name="livre_detail")
+     */
+    public function detailLivre(int $id, BookRepository $repo, Request $request, EntityManagerInterface $em): Response {
         $livre = $repo->find($id);
         if (!$livre) {
             throw $this->createNotFoundException('Livre non trouvé');
         }
-        return $this->render('livre/detail.html.twig', ['livre' => $livre]);
+        $comment = new Comment();
+        $comment->setBook($livre);
+        $form = $this->createForm(CommentType::class, $comment);
+        $form->handleRequest($request);
+        if ($form->isSubmitted() && $form->isValid()) {
+            $em->persist($comment);
+            $em->flush();
+            return $this->redirectToRoute('livre_detail', ['id' => $livre->getId()]);
+        }
+        return $this->render('livre/detail.html.twig', [
+            'livre' => $livre,
+            'commentForm' => $form->createView(),
+        ]);
     }
 }

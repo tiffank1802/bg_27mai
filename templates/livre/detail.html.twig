@@ -4,15 +4,40 @@
 
 {% block body %}
 <div class="container mt-4">
-    <div class="card">
-        <img src="{{ livre.cover }}" class="card-img-top" alt="{{ livre.titre }}">
-        <div class="card-body">
-            <h3 class="card-title">{{ livre.titre }}</h3>
-            <p class="card-text">Auteur : {{ livre.auteur.nom }} {{ livre.auteur.prenom }}</p>
-            <p class="card-text">Éditeur : {{ livre.editeur.nom }}</p>
+    <div class="card" style="background: url('/images/paix-et-guerre.png') center/cover no-repeat; position: relative;">
+        <div style="background: rgba(0,0,0,0.6); position: absolute; top:0; left:0; width:100%; height:100%; border-radius: .5rem;"></div>
+        <div class="card-body position-relative" style="z-index:2; color: #fff;">
+            <h3 class="card-title">{{ livre.title }}</h3>
+            <hr style="border-color: #fff;">
+            <p class="card-text">
+                Auteur(s) :
+                {% for author in livre.authors %}
+                    {{ loop.index }}. {{ author.name }}{% if not loop.last %}, {% endif %}
+                {% else %}
+                    <em>Non renseigné</em>
+                {% endfor %}
+            </p>
+            <p class="card-text">Éditeur : {{ livre.editor ? livre.editor.name : 'Non renseigné' }}</p>
             <p class="card-text">ISBN : {{ livre.isbn }}</p>
-            <a href="{{ path('liste_livres') }}" class="btn btn-secondary">Retour à la liste</a>
+            <a href="{{ path('app_livre') }}" class="btn btn-secondary">Retour à la liste</a>
         </div>
+    </div>
+
+    <div class="mt-5">
+        <h4>Laisser un commentaire</h4>
+        {{ include('livre/_comment_form.html.twig', {'form': commentForm}) }}
+    </div>
+
+    <div class="mt-4">
+        <h5>Commentaires</h5>
+        {% for comment in livre.comments %}
+            <div class="border rounded p-2 mb-2 bg-light text-dark">
+                <strong>{{ comment.authorName }}</strong> :<br>
+                {{ comment.content }}
+            </div>
+        {% else %}
+            <em>Aucun commentaire pour ce livre.</em>
+        {% endfor %}
     </div>
 </div>
 {% endblock %}
