@@ -126,10 +126,12 @@ def create_access_token(data: dict):
     return encoded_jwt
 
 def verify_password(plain_password, hashed_password):
-    return pwd_context.verify(plain_password, hashed_password)
+    # Simple SHA256 hashing for testing purposes
+    return hashlib.sha256(plain_password.encode()).hexdigest() == hashed_password
 
 def get_password_hash(password):
-    return pwd_context.hash(password)
+    # Simple SHA256 hashing for testing purposes
+    return hashlib.sha256(password.encode()).hexdigest()
 
 async def get_current_user(credentials: HTTPAuthorizationCredentials = Depends(security)):
     try:
