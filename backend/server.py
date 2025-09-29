@@ -7,7 +7,7 @@ from pydantic import BaseModel, Field, EmailStr
 from typing import Optional, List, Dict, Any
 from datetime import datetime, timedelta
 from jose import JWTError, jwt
-from passlib.context import CryptContext
+import hashlib
 from bson import ObjectId
 import os
 import uuid
