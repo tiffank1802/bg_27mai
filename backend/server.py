@@ -35,7 +35,7 @@ client = MongoClient(MONGO_URL)
 db = client.bibliogest
 
 # Security
-pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
+pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto", bcrypt__rounds=12)
 security = HTTPBearer()
 
 # Pydantic Models
