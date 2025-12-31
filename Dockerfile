@@ -3,7 +3,7 @@ FROM php:8.2-apache
 
 WORKDIR /var/www/html
 
-# Install dependencies including Node.js
+# Install dependencies
 RUN apt-get update && apt-get install -y \
     libicu-dev \
     libzip-dev \
@@ -12,8 +12,6 @@ RUN apt-get update && apt-get install -y \
     git \
     libpq-dev \
     libonig-dev \
-    nodejs \
-    npm \
     && docker-php-ext-install \
     intl \
     opcache \
@@ -38,9 +36,6 @@ COPY . .
 # Install PHP dependencies
 ENV COMPOSER_ALLOW_SUPERUSER=1
 RUN composer install --no-dev --optimize-autoloader --no-scripts
-
-# Build assets
-RUN npm install && npm run build
 
 # Run composer post-install scripts
 RUN composer run-script post-install-cmd
