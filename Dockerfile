@@ -1,23 +1,9 @@
-# Build assets
-FROM node:20-alpine AS assets_builder
-
-WORKDIR /app
-
-COPY package.json package-lock.json webpack.config.js ./
-RUN npm install
-
-COPY assets ./assets
-# Copy other files that might be needed for build (e.g. templates if using tailwind)
-COPY templates ./templates
-
-RUN npm run build
-
 # Production image
 FROM php:8.2-apache
 
 WORKDIR /var/www/html
 
-# Install dependencies
+# Install dependencies including Node.js
 RUN apt-get update && apt-get install -y \
     libicu-dev \
     libzip-dev \
@@ -26,6 +12,8 @@ RUN apt-get update && apt-get install -y \
     git \
     libpq-dev \
     libonig-dev \
+    nodejs \
+    npm \
     && docker-php-ext-install \
     intl \
     opcache \
@@ -44,20 +32,17 @@ RUN sed -ri -e 's!/var/www/!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/apache2.conf
 # Install Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
-# Copy composer files
-COPY composer.json composer.lock symfony.lock ./
+# Copy application files
+COPY . .
 
 # Install PHP dependencies
 ENV COMPOSER_ALLOW_SUPERUSER=1
 RUN composer install --no-dev --optimize-autoloader --no-scripts
 
-# Copy application files
-COPY . .
+# Build assets
+RUN npm install && npm run build
 
-# Copy built assets
-COPY --from=assets_builder /app/public/build ./public/build
-
-# Run composer post-install scripts (now that all files are present)
+# Run composer post-install scripts
 RUN composer run-script post-install-cmd
 
 # Set permissions
