@@ -12,6 +12,7 @@ RUN apt-get update && apt-get install -y \
     git \
     libpq-dev \
     libonig-dev \
+    openssl \
     && docker-php-ext-install \
     intl \
     opcache \
