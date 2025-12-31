@@ -1,0 +1,31 @@
+app_name: bibliogest-librairie
+source:
+  git:
+    git_url: https://github.com/your-username/your-repo.git
+    branch: main
+services:
+  - name: web
+    source:
+      dockerfile: Dockerfile
+    instance_types:
+      - nano
+    ports:
+      - 80
+    env:
+      - key: APP_ENV
+        value: prod
+      - key: SYMFONY_ENV
+        value: prod
+      - key: DATABASE_URL
+        value: ${POSTGRES_URL}
+    healthchecks:
+      http:
+        path: /
+        port: 80
+databases:
+  - name: postgres
+    type: postgresql
+    instance_type: nano
+    env:
+      - key: POSTGRES_URL
+        value: ${DATABASE_URL}

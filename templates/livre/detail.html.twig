@@ -1,43 +1,80 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Détail du livre{% endblock %}
+{% block title %}{{ livre.title }} - Détails{% endblock %}
 
 {% block body %}
-<div class="container mt-4">
-    <div class="card" style="background: url('/images/paix-et-guerre.png') center/cover no-repeat; position: relative;">
-        <div style="background: rgba(0,0,0,0.6); position: absolute; top:0; left:0; width:100%; height:100%; border-radius: .5rem;"></div>
-        <div class="card-body position-relative" style="z-index:2; color: #fff;">
-            <h3 class="card-title">{{ livre.title }}</h3>
-            <hr style="border-color: #fff;">
-            <p class="card-text">
-                Auteur(s) :
-                {% for author in livre.authors %}
-                    {{ loop.index }}. {{ author.name }}{% if not loop.last %}, {% endif %}
+<section class="py-5">
+    <div class="container px-4">
+        {% for message in app.flashes('success') %}
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                {{ message }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            </div>
+        {% endfor %}
+
+        <div class="row g-5">
+            <div class="col-lg-8">
+                <div class="card shadow-lg book-card" style="height: 500px; background-image: url('{{ livre.image ?? 'https://picsum.photos/400/600?random=' ~ livre.id }}');">
+                    <div class="card-body d-flex flex-column justify-content-end">
+                        <h1 class="card-title display-4 fw-bold mb-3">{{ livre.title }}</h1>
+                        <p class="fs-5 mb-2">
+                            {% for author in livre.authors %}
+                                <span class="badge bg-light text-dark me-2">{{ author.name }}</span>
+                            {% else %}
+                                <em class="text-white-75">Auteur non renseigné</em>
+                            {% endfor %}
+                        </p>
+                        <p class="mb-1">Éditeur: {{ livre.editor ? livre.editor.name : 'Non renseigné' }}</p>
+                        <p class="mb-1">ISBN: {{ livre.isbn }}</p>
+                        <p class="mb-1">Année: {{ livre.year ?? 'Non renseignée' }}</p>
+                        <p class="mb-1">Genre: {{ livre.genre ?? 'Non renseigné' }}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card shadow-lg">
+                    <div class="card-body">
+                        <a href="{{ path('app_livre') }}" class="btn btn-outline-primary mb-3">
+                            <i class="fas fa-arrow-left me-2"></i>Retour au catalogue
+                        </a>
+                        {% if canReserve %}
+                            <form method="post" action="{{ path('livre_reserve', {'id': livre.id}) }}">
+                                <select name="duration" class="form-select mb-2">
+                                    <option value="2">2 minutes</option>
+                                    <option value="5" selected>5 minutes</option>
+                                    <option value="10">10 minutes</option>
+                                </select>
+                                <button type="submit" name="reserve" value="1" class="btn btn-success">
+                                    <i class="fas fa-calendar-check me-2"></i>Réserver
+                                </button>
+                            </form>
+                        {% elseif livre.status.value == 'borrowed' %}
+                            <button class="btn btn-warning" disabled>Livre emprunté</button>
+                        {% else %}
+                            <button class="btn btn-secondary" disabled>Non disponible</button>
+                        {% endif %}
+                        <div id="countdown" class="mt-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-lg-8">
+                <h4>Commentaires</h4>
+                {% if app.user %}
+                    {{ include('livre/_comment_form.html.twig', {'form': commentForm}) }}
                 {% else %}
-                    <em>Non renseigné</em>
+                    <p><a href="{{ path('app_login') }}">Connectez-vous</a> pour commenter.</p>
+                {% endif %}
+                {% for comment in livre.comments %}
+                    <div class="border p-2 mb-2">
+                        <strong>{{ comment.name }}</strong>: {{ comment.content }}
+                    </div>
                 {% endfor %}
-            </p>
-            <p class="card-text">Éditeur : {{ livre.editor ? livre.editor.name : 'Non renseigné' }}</p>
-            <p class="card-text">ISBN : {{ livre.isbn }}</p>
-            <a href="{{ path('app_livre') }}" class="btn btn-secondary">Retour à la liste</a>
+            </div>
         </div>
     </div>
-
-    <div class="mt-5">
-        <h4>Laisser un commentaire</h4>
-        {{ include('livre/_comment_form.html.twig', {'form': commentForm}) }}
-    </div>
-
-    <div class="mt-4">
-        <h5>Commentaires</h5>
-        {% for comment in livre.comments %}
-            <div class="border rounded p-2 mb-2 bg-light text-dark">
-                <strong>{{ comment.authorName }}</strong> :<br>
-                {{ comment.content }}
-            </div>
-        {% else %}
-            <em>Aucun commentaire pour ce livre.</em>
-        {% endfor %}
-    </div>
-</div>
+</section>
 {% endblock %}

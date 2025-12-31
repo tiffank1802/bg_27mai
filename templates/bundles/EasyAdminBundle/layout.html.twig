@@ -1,0 +1,33 @@
+{% extends '@EasyAdmin/layout.html.twig' %}
+
+{% block user_menu %}
+    {% if ea.userMenu.items|length > 0 %}
+        <twig:ea:ActionMenu:ActionList:Divider/>
+
+        {% for item in ea.userMenu.items %}
+            {% if item.isMenuSection %}
+                <twig:ea:ActionMenu:ActionList:Section
+                    label="{{ item.label|trans }}"
+                    class="{{ item.cssClass }}"
+                />
+            {% else %}
+                <twig:ea:ActionMenu:ActionList:Item
+                    label="{{ item.label|trans }}"
+                    class="user-action {{ item.cssClass }}"
+                    icon="{{ item.icon }}"
+                    url="{{ item.linkUrl }}"
+                    target="{{ item.linkTarget }}"
+                    rel="{{ item.linkRel }}"
+                    referrerpolicy="origin-when-cross-origin"
+                />
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+
+    <twig:ea:ActionMenu:ActionList:Divider/>
+    <twig:ea:ActionMenu:ActionList:Item
+        url="{{ path('app_logout') }}"
+        label="Déconnexion"
+        icon="fas fa-sign-out-alt"
+    />
+{% endblock %}

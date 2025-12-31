@@ -6,11 +6,16 @@
             {{ form_widget(form.content, {'attr': {'class': 'form-control'}}) }}
             {{ form_errors(form.content) }}
         </div>
-        <div class="mb-3">
-            {{ form_label(form.authorName) }}
-            {{ form_widget(form.authorName, {'attr': {'class': 'form-control'}}) }}
-            {{ form_errors(form.authorName) }}
-        </div>
-        <button type="submit" class="btn btn-primary">Envoyer</button>
+         <div class="mb-3">
+             {{ form_label(form.name) }}
+             {{ form_widget(form.name, {'attr': {'class': 'form-control'}}) }}
+             {{ form_errors(form.name) }}
+         </div>
+         <div class="mb-3">
+             {{ form_label(form.email) }}
+             {{ form_widget(form.email, {'attr': {'class': 'form-control', 'type': 'email'}}) }}
+             {{ form_errors(form.email) }}
+         </div>
+         <button type="submit" class="btn btn-primary">Envoyer</button>
     {{ form_end(form) }}
 </div>

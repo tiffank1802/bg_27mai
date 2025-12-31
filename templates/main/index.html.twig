@@ -3,30 +3,114 @@
 {% block title %}Accueil{% endblock %}
 
 {% block body %}
-    <!-- Header-->
-    <header class="bg-primary bg-gradient text-white">
-        <div class="container px-4 text-center">
+    <!-- Hero Section-->
+    <section class="hero-section">
+        <div class="container px-4 text-center fade-in-up">
             <h1 class="fw-bolder">Bibliogest</h1>
-            <p class="lead">Catalogue en ligne de la médiathèque de Saint-Ouen</p>
-            <a class="btn btn-lg btn-light" href="#">Parcourez le catalogue</a>
+            <p class="lead">Découvrez notre catalogue en ligne et plongez dans l'univers des livres</p>
+            <div class="d-flex flex-column flex-sm-row justify-content-center gap-3 mt-4">
+                <a class="btn btn-lg btn-light" href="{{ path('app_livre') }}">
+                    <i class="fas fa-search me-2"></i>Explorer le catalogue
+                </a>
+                <a class="btn btn-lg btn-outline-warning" href="{{ path('app_admin_login') }}">
+                    <i class="fas fa-cog me-2"></i>Connexion Administrateur
+                </a>
+            </div>
         </div>
-    </header>
-    <!-- About section-->
-    <section >
+    </section>
+
+    <!-- Featured Books Section-->
+    <section class="py-5 bg-light">
         <div class="container px-4">
-            <div class="row gx-4 justify-content-center">
+            <div class="row justify-content-center text-center mb-5">
                 <div class="col-lg-8">
-                    <h2>Bibliogest: qu'est-ce que c'est?</h2>
-                    <p class="lead">Bibliogest est la plateforme officielle de consultation du catalogue de la médiathèque de Saint-Ouen. Explorez notre collection avec une recherche efficace, vérifiez la disponibilité des ouvrages en temps réel, et effectuez des réservations en toute simplicité. bibliogest s'engage pour faciliter l'accès à la culture et promouvoir la richesse de notre patrimoine littéraire.</p>
-                    <p>Fonctionnalités clés :</p>
-                    <ul>
-                        <li>Recherche avancée de livres</li>
-                        <li>Consultation en temps réel du statut des ouvrages (disponible, emprunté, indisponible)</li>
-                        <li>Affichage détaillé des informations sur les livres</li>
-                        <li>Processus de réservation simplifié</li>
-                    </ul>
+                    <h2 class="fw-bold text-primary">Livres populaires</h2>
+                    <p class="lead">Découvrez notre sélection de livres les plus appréciés</p>
                 </div>
             </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- Sample featured books - in real app, this would be dynamic -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm book-card" style="background-image: url('/images/paix-et-guerre.png');">
+                        <div class="card-body d-flex flex-column justify-content-end">
+                            <h5 class="card-title">Guerre et Paix</h5>
+                            <p class="card-text">Léon Tolstoï</p>
+                            <a href="{{ path('app_livre') }}" class="btn btn-light btn-sm mt-auto">Voir détails</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm book-card" style="background-image: url('https://picsum.photos/200/300?random=2');">
+                        <div class="card-body d-flex flex-column justify-content-end">
+                            <h5 class="card-title">Les Misérables</h5>
+                            <p class="card-text">Victor Hugo</p>
+                            <a href="{{ path('app_livre') }}" class="btn btn-light btn-sm mt-auto">Voir détails</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm book-card" style="background-image: url('/images/paix-et-guerre.png');">
+                        <div class="card-body d-flex flex-column justify-content-end">
+                            <h5 class="card-title">Crime et Châtiment</h5>
+                            <p class="card-text">Fiodor Dostoïevski</p>
+                            <a href="{{ path('app_livre') }}" class="btn btn-light btn-sm mt-auto">Voir détails</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section-->
+    <section class="about-section">
+        <div class="container px-4">
+            <div class="row gx-4 justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="fw-bold text-primary mb-4">À propos de Bibliogest</h2>
+                    <p class="lead mb-4">Bibliogest est la plateforme officielle de consultation du catalogue de la médiathèque de Saint-Ouen. Explorez notre collection avec une recherche efficace, vérifiez la disponibilité des ouvrages en temps réel, et effectuez des réservations en toute simplicité.</p>
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="text-center">
+                                <i class="fas fa-search fa-3x text-primary mb-3"></i>
+                                <h5>Recherche avancée</h5>
+                                <p>Trouvez rapidement le livre que vous cherchez</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="text-center">
+                                <i class="fas fa-clock fa-3x text-primary mb-3"></i>
+                                <h5>Disponibilité en temps réel</h5>
+                                <p>Consultez le statut des ouvrages instantanément</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="text-center">
+                                <i class="fas fa-info-circle fa-3x text-primary mb-3"></i>
+                                <h5>Informations détaillées</h5>
+                                <p>Découvrez tous les détails sur chaque livre</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="text-center">
+                                <i class="fas fa-calendar-check fa-3x text-primary mb-3"></i>
+                                <h5>Réservation simplifiée</h5>
+                                <p>Réservez vos livres en quelques clics</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-5" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+        <div class="container px-4 text-center">
+            <h2 class="fw-bold mb-4">Prêt à explorer notre collection ?</h2>
+            <p class="lead mb-4">Rejoignez notre communauté de lecteurs passionnés</p>
+            <a class="btn btn-lg btn-light" href="{{ path('app_livre') }}">
+                <i class="fas fa-book-open me-2"></i>Commencer maintenant
+            </a>
         </div>
     </section>
 {% endblock %}
