@@ -36,7 +36,7 @@ COPY . .
 # Create a dummy .env file for production
 RUN echo "APP_ENV=prod" > .env && \
     echo "APP_SECRET=$(openssl rand -base64 32)" >> .env && \
-    echo "DATABASE_URL=\${DATABASE_URL}" >> .env
+    echo "DATABASE_URL=postgresql://dummy:dummy@dummy:5432/dummy" >> .env
 
 # Install PHP dependencies
 ENV COMPOSER_ALLOW_SUPERUSER=1
